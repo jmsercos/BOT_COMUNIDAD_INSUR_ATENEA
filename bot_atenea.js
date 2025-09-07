@@ -1,6 +1,8 @@
 // ================== IMPORTS BÁSICOS ==================
-import { Client, LocalAuth } from 'whatsapp-web.js';
-import qrcode from 'qrcode-terminal';
+import wweb from 'whatsapp-web.js';
+const { Client, LocalAuth } = wweb;   // <-- desestructuramos del default
+
+import qrcode from 'qrcode-terminal'; // OK, sigue igual (CJS → default)
 
 // Ruta base (Railway: STORAGE_DIR=/data)
 const PATH = process.env.STORAGE_DIR || '.';
