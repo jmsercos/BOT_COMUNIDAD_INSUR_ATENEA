@@ -1,0 +1,14 @@
+{
+  "name": "bot_atenea",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot_atenea.js"
+  },
+  "dependencies": {
+    "lowdb": "^7.0.1",
+    "puppeteer": "^24.19.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.33.3"
+  }
+}
