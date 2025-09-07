@@ -1,13 +1,13 @@
 // ================== IMPORTS BÁSICOS ==================
-const { Client, LocalAuth } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
+import { Client, LocalAuth } from 'whatsapp-web.js';
+import qrcode from 'qrcode-terminal';
 
 // Ruta base (Railway: STORAGE_DIR=/data)
 const PATH = process.env.STORAGE_DIR || '.';
 
 // ================== BD JSON (lowdb) + CENSO OFICIAL ==================
-const { Low } = require('lowdb');
-const { JSONFile } = require('lowdb/node');
+import { Low } from 'lowdb';
+import { JSONFile } from 'lowdb/node';
 
 const MAX_RESIDENTS_PER_FLAT = 2;
 const db = new Low(new JSONFile(`${PATH}/db.json`), {});
@@ -624,3 +624,4 @@ client.on('message', async (msg) => {
   await initDB();
   client.initialize();
 })();
+
