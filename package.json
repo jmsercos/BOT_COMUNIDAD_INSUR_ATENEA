@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bot de verificación de vecinos para WhatsApp (Insur Atenea)",
   "main": "bot_atenea.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "start": "node bot_atenea.js"
   },
