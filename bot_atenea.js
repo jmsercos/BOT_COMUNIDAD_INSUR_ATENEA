@@ -9,6 +9,7 @@ const PATH = process.env.STORAGE_DIR || '.';
 import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
 
+
 const MAX_RESIDENTS_PER_FLAT = 2;
 const db = new Low(new JSONFile(`${PATH}/db.json`), {});
 
